@@ -1,0 +1,7 @@
+Setting up lighty+php5-fcgi on mac ox using ports
+
+sudo port install lighttpd +cml +ssl
+sudo port install php5 +fastcgi +imap +tidy +sqlite +pcntl +postgresql
+sudo rm /Library/LaunchDaemons/org.macports.lighttpd.plist
+sudo ln -s /etc/lighttpd/net.lighttpd.plist /Library/LaunchDaemons/
+sudo launchctl load /Library/LaunchDaemons/net.lighttpd.plist
