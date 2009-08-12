@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>  
+  <key>Label</key><string>org.gnome.gamin-server</string>
+  <key>LowPriorityIO</key><true/>
+  <key>Disabled</key><false/>
+  <key>RunAtLoad</key><true/>
+  <key>KeepAlive</key><true/>
+  <key>Program</key><string>/usr/local/libexec/gam_server</string>
+</dict>
+</plist>

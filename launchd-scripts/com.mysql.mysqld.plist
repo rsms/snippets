@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>  
+  <key>Label</key><string>com.mysql.mysqld</string>
+  <key>UserName</key><string>_mysql</string>
+  <key>GroupName</key><string>_mysql</string>
+  <key>LowPriorityIO</key><true/>
+  <key>Disabled</key><false/>
+  <key>RunAtLoad</key><true/>
+  <key>KeepAlive</key><true/>
+  <key>Umask</key><integer>7</integer>
+  <key>WorkingDirectory</key><string>/usr/local/mysql</string>
+  <key>Program</key><string>/usr/local/mysql/bin/mysqld</string>
+  <key>ProgramArguments</key><array>
+    <string>--user=_mysql</string>
+  </array>
+  <key>StandardErrorPath</key><string>/var/log/mysqlerr.log</string>
+  <key>Sockets</key><dict>
+    <key>MySQL-file</key><dict>
+      <key>SockPathName</key><string>/opt/local/var/run/mysql5/mysqld.sock</string>
+    </dict>
+  </dict>
+</dict>
+</plist>
